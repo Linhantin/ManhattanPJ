@@ -1,57 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
-  </head>
-  <body>
-    <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+  <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+</head>
 
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
+<body>
+  <%- include('./layout/header'); -%>
+    <%- include('./layout/banner'); -%>
 
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- scientist -->
+      <div class="container ">
+        <!-- scientist-pic @>768-->
+        <div class="d-none d-md-block">
+          <div class="row gx-lg-4 mt-4 ">
+            <div class="col-lg-3">
+              <a href="./scientist.html">
+                <img class=" img-fluid rounded sci_img" src="../assets/images/Oppenheimer_vertical.png"
+                  alt="responsiveImg">
+              </a>
+            </div>
+            <div class="col-lg-3">
+              <a href="./scientist.html">
+                <img class="img-fluid rounded sci_img" src="../assets/images/IsidorRabi_vertical.png"
+                  alt="responsiveImg">
+              </a>
+            </div>
+            <div class="col-lg-3">
+              <a href="./scientist.html">
+                <img class="img-fluid rounded sci_img" src="../assets/images/NielsBohr_vertical.png"
+                  alt="responsiveImg">
+              </a>
+            </div>
+            <div class="col-lg-3">
+              <a href="./scientist.html">
+                <img class="img-fluid rounded sci_img" src="../assets/images/Teller_vertical.png" alt="responsiveImg">
+              </a>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+
+        </div>
+        <!-- scientist-pic @<768-->
+        <div class="d-block d-md-none gx-lg-4 mt-4">
+          <div><a href="./scientist.html"><img src="../assets/images/Oppenheimer_square.png" alt="responsiveImg"
+                class="img-fluid rounded sci_img my-2"></a></div>
+          <div><a href="./scientist.html"><img src="../assets/images/Isidor-Rabi_square.png" alt="responsiveImg"
+                class="img-fluid rounded sci_img my-2"></a></div>
+          <div><a href="./scientist.html"><img src="../assets/images/NielsBohr_square.png" alt="responsiveImg"
+                class="img-fluid rounded sci_img my-2"></a></div>
+          <div><a href="./scientist.html"><img src="../assets/images/Teller_square.png" alt="responsiveImg"
+                class="img-fluid rounded sci_img my-2"></a></div>
+        </div>
+        <!-- scientist-title -->
+        <div class="row align-items-end">
+          <h2 class="col-lg-8 font-garamond fs-7 mt-lg-15 lh-1 my-6" data-aos="fade-right">Who is involved in this
+            project?</h2>
+          <button type="button" class="col-lg-2 btn btn-secondary ms-auto my-6 "><a class="font-garamond fs-2 mt-4"
+              href="./scientist.html">...read more</a></button>
+        </div>
+      </div>
+
+      <!-- intro -->
+      <div class="container">
+        <div class="row mt-lg-12 mb-lg-4">
+          <!-- About-title -->
+          <div class="col-lg-6 row">
+            <h2 class="font-garamond fs-1 lh-1 my-6 d-flex align-items-start" data-aos="fade-right">What you need to
+              know about the project:
+            </h2>
+            <div class="w-100"></div>
+            <img class="img-fluid d-flex align-items-end " data-aos="fade-right" src="../assets/images/gadget.jpeg"
+              alt="g">
+          </div>
+          <!-- About-content -->
+          <div class="row col-lg-6 fs-6 " data-aos="fade-left">
+            <div class="col-lg-12 py-6 gap-lg-2 py-lg-12 border-bottom border-2 border-success ">
+              <h5><i class="fa-solid fa-burst fa-2xl "></i> 曼哈頓計劃（Manhattan Project）：</h5>
+              <p>
+                是第二次世界大戰期間美國進行的一個秘密科學研究計劃，目的是開發原子彈。該計劃得名於其總部位於紐約曼哈頓的哥倫比亞大學。曼哈頓計劃始於1942年，當時納粹德國在歐洲取得進展，並有可能研發出具有毀滅性的原子彈。美國政府意識到這樣的武器可能對戰爭結果產生重大影響，因此決定在極短的時間內開發出自己的原子彈。
+              </p>
+            </div>
+            <div class="w-100 "></div>
+            <div class="col-lg-6 py-6 py-lg-12 border-bottom border-2 border-success">
+              <h5>目標：</h5>
+              <p>曼哈頓計劃的目標是研發並製造出可使用的原子彈。這需要在核分裂反應中釋放出大量的能量，將裂變材料（如鈾和鈽）引爆，使其產生連鎖反應並釋放出巨大的破壞性力量。</p>
+            </div>
+            <div class="col-lg-6 py-6 py-lg-12 border-bottom border-2 border-success">
+              <h5>科學家：</h5>
+              曼哈頓計劃吸引了許多頂尖的科學家和研究人員，包括物理學家羅伯特·J·奧本海默、恩里科·費米、勞倫斯·羅伯特斯和愛德華·泰勒等。這些科學家致力於理解和掌握核裂變的物理和工程原理。
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-6 py-6 py-lg-12 border-bottom border-2 border-success">
+              <h5>研究地點：</h5>
+              曼哈頓計劃設立了多個研究場所，包括洛斯阿拉莫斯國家實驗室（Los Alamos National Laboratory）、奧克里奇實驗室（Oak Ridge Laboratory）和漢福德實驗室（Hanford
+              Laboratory）等。這些地點分別負責不同方面的研究和生產工作。</p>
+            </div>
+            <div class="col-lg-6 py-6 py-lg-12 border-bottom border-2 border-success">
+              <h5>結果：</h5>
+              <p>曼哈頓計劃於1945年成功開發出兩枚原子彈，分別在日本廣島和長崎投下，導致數十萬人喪生。這些原子彈的使用迫使日本投降，結束了第二次世界大戰。
+              </p>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-10 py-6 py-lg-12">
+              <h5><i class="fa-solid fa-burst fa-2xl "></i> 歷史定位：</h5><br>
+              <p>曼哈頓計劃是現代核武器發展的重要里程碑，也引發了對於核武器使用和核能的道德和政治辯論。它的成果奠定了核能和核武器的基礎，並對世界格局和後續的科學研究產生了深遠影響。</p>
+            </div>
+            <div class="w-100 border-bottom border-2 border-success"></div>
+          </div>
+          <!-- About-button -->
+          <button type="button" class="col-lg-2 btn btn-secondary mx-auto my-6 my-lg-12"><a
+              class="font-garamond fs-2 mt-4" href="./about.html">...read more</a></button>
+        </div>
+
+      </div>
+
+      <!-- swiper -->
+      <div class="container">
+        <!-- swiper-title -->
+        <div class="row justify-content-end text-end">
+          <h2 class="col-lg-9 font-garamond fs-1 fs-lg-7 lh-1 my-6" data-aos="fade-left">
+            Other countries that are also developing nuclear weapons</h2>
+        </div>
+        <!-- swiper-Slides -->
+        <div class="swiper mt-lg-8 mb-lg-18 mb-10">
+          <div class="swiper-button-prev">
+          </div>
+          <div class="swiper-wrapper ">
+            <!-- swiper-Slides-1 -->
+            <div class="swiper-slide ">
+              <a class="text-white" href="./nations.html">
+                <div
+                  class="nation nation-1 d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                  <div class="nation-intro">
+                    <h3 class="lh-base mb-3">
+                      <span class="font-Shrikhand fs-96">01</span><br>
+                      <span class="nation-title">蘇聯</span>
+                    </h3>
+                    <p class="mb-0">蘇聯在二戰期間展開了自己的原子彈研發計劃，被稱為「蘇聯原子彈計劃」。</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- swiper-Slides-2 -->
+            <div class="swiper-slide">
+              <a class="text-white" href="./nations.html">
+                <div
+                  class="nation nation-2 d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                  <div class="nation-intro">
+                    <h3 class="lh-base mb-3">
+                      <span class="font-Shrikhand fs-96">02</span><br>
+                      <span class="nation-title">英國</span>
+                    </h3>
+                    <p class="mb-0">英國也在二戰期間開展了自己的核武器研發計劃，被稱為「英國核武器計劃」。</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- swiper-Slides-3 -->
+            <div class="swiper-slide">
+              <a class="text-white" href="./nations.html">
+                <div
+                  class="nation nation-3 d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                  <div class="nation-intro">
+                    <h3 class="lh-base mb-3">
+                      <span class="font-Shrikhand fs-96">03</span><br>
+                      <span class="nation-title">中國</span>
+                    </h3>
+                    <p class="mb-0">中國在曼哈頓計劃期間還未進行核武器研發，但在1950年代開始了自己的核武器計劃。</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next">
           </div>
         </div>
       </div>
-    </div>
 
-    <%- include('./layout/footer'); -%>
+      <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 
-    <script type="module" src="../main.js"></script>
-  </body>
+        <!-- swiper -->
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script>
+
+          const swiper = new Swiper('.swiper', {
+            autoplay: {
+              delay: 5000,
+            },
+            breakpoints: {
+              768: {
+                autoplay: {
+                  enabled: false,
+                }
+              }
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+
+
+        </script>
+
+        <script type="module" src="../main.js"></script>
+</body>
+
 </html>

@@ -1,11 +1,31 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+// font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&family=EB+Garamond:ital,wght@1,500&family=Cormorant+Garamond:wght@300;400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+// @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
 
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// 1. 匯入 functions (按照這個順序，後面可以啟動 manipulate colors, SVGs, calc 等功能)
+@import "../../node_modules/bootstrap/scss/functions"; // !原始勿刪
+
+// 2. 匯入欲覆蓋既有變數的自訂變數 (修改原有變數的 scss),需要優先於BS
+@import './utils/variables'; // !原始勿刪
+
+// // 3. 匯入運作 Bootstrap 必須的檔案
+// @import "../../node_modules/bootstrap/scss/maps"; // !勿刪
+// @import "../../node_modules/bootstrap/scss/mixins"; // !勿刪
+// @import "../../node_modules/bootstrap/scss/root"; // !勿刪
+
+// 自定義樣式
+@import './utils/font'; //字體
+@import './utils/swiper';
+@import './utils/utilities';
+@import './utils/base';
+
+@import './layout/header.scss'; // !原始勿刪
+@import './layout/footer.scss'; // !原始勿刪
 
 
-@import './pages/index.scss';
+@import './pages/index.scss'; // !原始勿刪
 
-@import "../../node_modules/bootstrap";
+@import "../../node_modules/bootstrap"; // !原始勿刪
+

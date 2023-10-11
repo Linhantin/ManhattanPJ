@@ -1,0 +1,66 @@
+body {
+    background-color: #000000;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: #fff;
+}
+
+.font-Shrikhand {
+    font-family: 'Shrikhand', cursive;
+}
+
+.fs-96 {
+    font-size: 96px;
+}
+
+.nation {
+    height: 351px;
+
+    background-size: cover;
+    background-position: center;
+    padding: 16px;
+
+    @media (min-width: 768px) {
+        height: 560px;
+        padding-right: 40px;
+    }
+
+    &-title {
+        letter-spacing: 24px;
+
+        @media (min-width: 768px) {
+            letter-spacing: 32px;
+            margin-right: -32px;
+        }
+    }
+
+    &-1 {
+        background-image: url(../images/gadget.jpeg);
+    }
+
+    &-2 {
+        background-image: url(../images/research.jpeg);
+    }
+
+    &-3 {
+        background-image: url(../images/Tinian.jpeg);
+    }
+
+}
+
+.rotate {
+    rotate: 180deg;
+}
+
+// 箭頭
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    position: initial;
+    margin-top: 0;
+    width: auto;
+    height: auto;
+
+    &::after {
+        content: '';
+    }
+}

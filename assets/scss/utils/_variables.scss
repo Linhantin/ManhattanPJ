@@ -298,9 +298,9 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
+$primary:       #dcd4c8 !default;
+$secondary:     #937f76 !default;
+$success:       #63241e !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
@@ -374,11 +374,34 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25, // 4px
+  2: $spacer * .5, // 8px
+  3: $spacer * .75, // 12px
+  4: $spacer, // 16px
+  5: $spacer * 1.25, // 20px
+  6: $spacer * 1.5, // 24px
+  7: $spacer * 1.75, // 28px
+  8: $spacer * 2, // 32px
+  9: $spacer * 2.25, // 36px
+  10: $spacer * 2.5,      //40px
+  11: $spacer * 2.75,     //44px
+  12: $spacer * 3,        //48px
+  13: $spacer * 3.25,     //52px
+  14: $spacer * 3.5,      //56px
+  15: $spacer * 3.75,     //60px
+  16: $spacer * 4,        //64px
+  17: $spacer * 4.75,     //76px
+  18: $spacer * 5,        //80px
+  19: $spacer * 6,        //96px
+  20: $spacer * 6.5,      //104px
+  21: $spacer * 7.5,      //120px
+  22: $spacer * 8.5,      //136px
+  23: $spacer * 9,        //144px
+  24: $spacer * 9.75,     //156px
+  25: $spacer * 10,       //160px
+  26: $spacer * 13.5,     //216px
+  27: $spacer * 20,
+  28: $spacer * 25,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -398,7 +421,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   $primary !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 
@@ -407,7 +430,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -566,7 +589,7 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
+$h1-font-size:                $font-size-base * 3.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
 $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
@@ -576,12 +599,17 @@ $h6-font-size:                $font-size-base !default;
 
 // scss-docs-start font-sizes
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: $h1-font-size, // 56
+  2: $h2-font-size, // 32
+  3: $h3-font-size, // 28
+  4: $h4-font-size, // 24
+  5: $h5-font-size, // 20
+  6: $h6-font-size, // 16px
+  7: 1rem * 8, // 128
+  8: 1rem * 9, // 144
+  9: 1rem * 10, // 160
+  10: 1rem * 12, // 192
+  11: 1rem * 3, // 48
 ) !default;
 // scss-docs-end font-sizes
 

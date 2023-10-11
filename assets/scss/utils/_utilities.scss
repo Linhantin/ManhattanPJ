@@ -1,0 +1,27 @@
+.bg-linear-gradient-to-primary {
+    background: linear-gradient(180deg,#dcd4c8 1.22%, #000 116.05%);
+  }
+
+.bg-radial-gradient-from-dark-center {
+    background: radial-gradient(50% 50% at 50% 50%, #28085C 0%, #000 100%);
+}
+
+.mb-n25 {
+    margin-bottom: -240px !important;
+}
+
+.mb-n15 {
+    margin-bottom: -100px !important;
+}
+
+.mt-n15 {
+    margin-top: 100px !important;
+}
+
+.sci_img{
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 16px 4px #fff;
+      }
+}
